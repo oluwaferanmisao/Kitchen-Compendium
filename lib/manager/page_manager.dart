@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import "package:kitchen_compendium/pages/home_page.dart";
 
 class PageManager extends StatelessWidget {
   const PageManager({super.key});
@@ -7,7 +8,7 @@ class PageManager extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: Text('Hello\nKitchen.'),
+        child: HomePage(),
       ),
     );
   }
