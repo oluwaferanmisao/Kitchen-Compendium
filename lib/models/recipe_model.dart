@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:kitchen_compendium/models/ingredient_model.dart';
 
 class Recipe {
