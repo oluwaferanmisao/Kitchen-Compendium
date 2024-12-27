@@ -1,7 +1,9 @@
+import 'package:kitchen_compendium/models/ingredient_model.dart';
+
 class Recipe {
   final String name;
   final int cookingTimeInMinutes;
-  final List<String> ingredients;
+  final List<Ingredient> ingredients;
   final List<String> preparationSteps;
   final String imageThumbnail;
 
