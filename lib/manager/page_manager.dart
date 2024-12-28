@@ -6,8 +6,13 @@ class PageManager extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
+    return Scaffold(
+      appBar: AppBar(
+        title: const Center(
+          child: Text("Kitchen Compendium"),
+        ),
+      ),
+      body: const Center(
         child: HomePage(),
       ),
     );
