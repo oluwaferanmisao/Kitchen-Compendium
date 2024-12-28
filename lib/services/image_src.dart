@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kitchen_compendium/pages/home_page.dart';
+import 'package:kitchen_compendium/data/recipe_list.dart';
 
 Widget imageSrc(index) {
   try {
