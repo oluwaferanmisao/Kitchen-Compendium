@@ -6,6 +6,7 @@ var kColorScheme = ColorScheme.fromSeed(
 );
 
 var kDarkColorScheme = ColorScheme.fromSeed(
+  brightness: Brightness.dark,
   seedColor: Colors.brown,
 );
 
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Kitchen Compendium',
-      theme: ThemeData().copyWith(
+      theme: ThemeData.light().copyWith(
         colorScheme: kColorScheme,
       ),
       darkTheme: ThemeData.dark().copyWith(
