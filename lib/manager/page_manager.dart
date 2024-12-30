@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import "package:kitchen_compendium/main.dart";
 import "package:kitchen_compendium/pages/home_page.dart";
 
 class PageManager extends StatelessWidget {
@@ -8,9 +9,8 @@ class PageManager extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Center(
-          child: Text("Kitchen Compendium"),
-        ),
+        title: const Text("Kitchen Compendium"),
+        centerTitle: true,
       ),
       body: const Center(
         child: HomePage(),

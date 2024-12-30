@@ -13,10 +13,9 @@ class HomePage extends StatelessWidget {
         return Padding(
           padding: const EdgeInsets.symmetric(
             horizontal: 16.0,
-            vertical: 8.0,
+            vertical: 4.0,
           ),
           child: Card(
-            elevation: 1,
             shape: const RoundedRectangleBorder(
               borderRadius: BorderRadius.all(
                 Radius.circular(4.0),

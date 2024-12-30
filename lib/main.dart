@@ -3,11 +3,13 @@ import 'package:kitchen_compendium/manager/page_manager.dart';
 
 var kColorScheme = ColorScheme.fromSeed(
   seedColor: Colors.white54,
+  contrastLevel: -1.0,
 );
 
 var kDarkColorScheme = ColorScheme.fromSeed(
   brightness: Brightness.dark,
   seedColor: Colors.brown,
+  contrastLevel: -1.0,
 );
 
 void main() {
