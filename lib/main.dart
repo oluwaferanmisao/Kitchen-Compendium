@@ -26,6 +26,12 @@ class MyApp extends StatelessWidget {
       title: 'Kitchen Compendium',
       theme: ThemeData.light().copyWith(
         colorScheme: kColorScheme,
+        textTheme: const TextTheme().copyWith(
+          titleMedium: const TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
       darkTheme: ThemeData.dark().copyWith(
         colorScheme: kDarkColorScheme,
