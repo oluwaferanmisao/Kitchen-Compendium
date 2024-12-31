@@ -35,6 +35,12 @@ class MyApp extends StatelessWidget {
       ),
       darkTheme: ThemeData.dark().copyWith(
         colorScheme: kDarkColorScheme,
+        textTheme: const TextTheme().copyWith(
+          titleMedium: const TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
       home: const PageManager(),
     );

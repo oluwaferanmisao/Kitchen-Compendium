@@ -47,7 +47,7 @@ class RecipePage extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 25),
-            Text('Ingredients', style: Theme.of(context).textTheme.titleMedium),
+            Text('Ingredients', style: Theme.of(context).textTheme.titleLarge),
             ListView.builder(
               shrinkWrap: true,
               itemCount: recipe.ingredients.length,
@@ -61,8 +61,9 @@ class RecipePage extends StatelessWidget {
                     '${recipe.ingredients[index].quantity} ${recipe.ingredients[index].unit}',
                     style: Theme.of(context).textTheme.bodySmall,
                   ),
-                  leading: const Icon(
+                  leading: Icon(
                     Icons.restaurant,
+                    color: Theme.of(context).iconTheme.color,
                   ),
                 );
               },
