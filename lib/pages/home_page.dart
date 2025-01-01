@@ -17,6 +17,7 @@ class HomePage extends StatelessWidget {
             vertical: 4.0,
           ),
           child: Card(
+            color: Theme.of(context).colorScheme.primaryContainer,
             shape: const RoundedRectangleBorder(
               borderRadius: BorderRadius.all(
                 Radius.circular(4.0),
@@ -34,25 +35,26 @@ class HomePage extends StatelessWidget {
               },
               child: ListTile(
                 contentPadding: const EdgeInsets.symmetric(horizontal: 16.0),
-                leading: imageSrc(index),
+                leading: imageSrc(context, index),
                 title: Text(
                   recipeList[index].name,
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: 16.0,
                     fontWeight: FontWeight.bold,
+                    color: Theme.of(context).colorScheme.onPrimary,
                   ),
                 ),
-                subtitle: const Text(
+                subtitle: Text(
                   "Tap for more details",
                   style: TextStyle(
                     fontSize: 12.0,
-                    color: Colors.grey,
+                    color: Theme.of(context).colorScheme.onPrimary,
                   ),
                 ),
-                trailing: const Icon(
+                trailing: Icon(
                   Icons.arrow_forward_ios,
                   size: 16.0,
-                  color: Colors.grey,
+                  color: Theme.of(context).colorScheme.onPrimary,
                 ),
               ),
             ),

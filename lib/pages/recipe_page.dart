@@ -15,6 +15,7 @@ class RecipePage extends StatelessWidget {
           vertical: 4.0,
         ),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Recipe image
@@ -67,7 +68,16 @@ class RecipePage extends StatelessWidget {
                   ),
                 );
               },
-            )
+            ),
+            const SizedBox(height: 25),
+            Text('Preparation Steps',
+                style: Theme.of(context).textTheme.titleLarge),
+            Text(
+                recipe.preparationSteps
+                    .toString()
+                    .replaceAll('[', '')
+                    .replaceAll(']', ''),
+                style: Theme.of(context).textTheme.bodyLarge),
           ],
         ),
       ),

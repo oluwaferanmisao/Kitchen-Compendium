@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kitchen_compendium/data/recipe_list.dart';
 
-Widget imageSrc(index) {
+Widget imageSrc(context, index) {
   try {
     if (recipeList[index] != null && recipeList[index].imageThumbnail != null) {
       return ClipRRect(
@@ -13,14 +13,26 @@ Widget imageSrc(index) {
           fit: BoxFit
               .cover, // Ensures the image covers the box without distortion
           errorBuilder: (context, error, stackTrace) {
-            return const Icon(Icons.broken_image, size: 50.0); // Error fallback
+            return Icon(
+              Icons.broken_image,
+              size: 50.0,
+              color: Theme.of(context).colorScheme.onPrimary,
+            ); // Error fallback
           },
         ),
       );
     } else {
-      return const Icon(Icons.food_bank, size: 50.0); // Fallback for null data
+      return Icon(
+        Icons.food_bank,
+        size: 50.0,
+        color: Theme.of(context).colorScheme.onPrimary,
+      ); // Fallback for null data
     }
   } catch (e) {
-    return const Icon(Icons.error_outline, size: 50.0); // Error fallback
+    return Icon(
+      Icons.error_outline,
+      size: 50.0,
+      color: Theme.of(context).colorScheme.onPrimary,
+    ); // Error fallback
   }
 }
