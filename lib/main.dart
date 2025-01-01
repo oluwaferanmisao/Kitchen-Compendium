@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kitchen_compendium/manager/page_manager.dart';
+import 'package:kitchen_compendium/theme/appcolors.dart';
 import 'package:kitchen_compendium/theme/themes.dart';
 
 void main() {
@@ -14,8 +15,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Kitchen Compendium',
-      theme: lightMode,
-      darkTheme: darkMode,
+      theme: ThemeData(
+        colorScheme: AppColors.lightColorScheme,
+        useMaterial3: true,
+      ),
+      darkTheme: ThemeData(
+        colorScheme: AppColors.darkColorScheme,
+        useMaterial3: true,
+      ),
       home: const PageManager(),
     );
   }
