@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kitchen_compendium/manager/page_manager.dart';
 import 'package:kitchen_compendium/theme/appcolors.dart';
-import 'package:kitchen_compendium/theme/themes.dart';
 
 void main() {
   runApp(const MyApp());
