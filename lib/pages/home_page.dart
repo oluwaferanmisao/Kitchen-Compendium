@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kitchen_compendium/data/recipe_list.dart';
+import 'package:kitchen_compendium/pages/recipe_detail_page.dart';
 import 'package:kitchen_compendium/pages/recipe_page.dart';
 import 'package:kitchen_compendium/services/image_src.dart';
 
@@ -28,7 +29,7 @@ class HomePage extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => RecipePage(
+                      builder: (context) => RecipeDetailPage(
                         recipe: recipeList[index],
                       ),
                     ));

@@ -48,6 +48,7 @@ class RecipePage extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 25),
+
             Text('Ingredients', style: Theme.of(context).textTheme.titleLarge),
             ListView.builder(
               shrinkWrap: true,
@@ -69,7 +70,9 @@ class RecipePage extends StatelessWidget {
                 );
               },
             ),
+
             const SizedBox(height: 25),
+
             Text('Preparation Steps',
                 style: Theme.of(context).textTheme.titleLarge),
             Text(
