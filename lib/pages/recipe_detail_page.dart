@@ -27,19 +27,9 @@ class RecipeDetailPage extends StatelessWidget {
             vertical: 4.0,
           ),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Hero image
-              ClipRRect(
-                borderRadius: BorderRadius.circular(4.0),
-                child: Image.network(
-                  recipe.imageThumbnail,
-                  width: double.infinity,
-                  height: 200,
-                  fit: BoxFit.cover,
-                ),
-              ),
-
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
