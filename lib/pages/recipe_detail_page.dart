@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:kitchen_compendium/models/recipe_model.dart';
 
@@ -27,9 +28,37 @@ class RecipeDetailPage extends StatelessWidget {
             vertical: 4.0,
           ),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              // Hero image
+              ClipRRect(
+                borderRadius: BorderRadius.circular(4.0),
+                child: Image.network(
+                  recipe.imageThumbnail,
+                  width: double.infinity,
+                  height: 200,
+                  fit: BoxFit.cover,
+                  errorBuilder: (context, error, stackTrace) {
+                    return Center(
+                      child: Container(
+                        width: double.infinity,
+                        height: 200,
+                        color: Theme.of(context).colorScheme.inverseSurface,
+                        child: Center(
+                          child: Text(
+                            "Connectivity Error",
+                            style: TextStyle(
+                              color: Theme.of(context).colorScheme.surface,
+                              fontSize: 24,
+                            ),
+                          ),
+                        ),
+                      ),
+                    );
+                  },
+                ),
+              ),
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
