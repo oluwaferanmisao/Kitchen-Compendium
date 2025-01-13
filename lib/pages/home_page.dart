@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:kitchen_compendium/data/recipe_list.dart';
 import 'package:kitchen_compendium/pages/recipe_detail_page.dart';
 import 'package:kitchen_compendium/services/image_src.dart';
@@ -25,6 +26,7 @@ class HomePage extends StatelessWidget {
             ),
             child: InkWell(
               onTap: () {
+                HapticFeedback.lightImpact();
                 Navigator.push(
                     context,
                     MaterialPageRoute(

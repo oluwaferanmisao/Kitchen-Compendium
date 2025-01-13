@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:kitchen_compendium/models/recipe_model.dart';
 
 class RecipeDetailPage extends StatelessWidget {
@@ -16,6 +17,7 @@ class RecipeDetailPage extends StatelessWidget {
             icon: const Icon(Icons.favorite_border),
             onPressed: () {
               // Add to favorites functionality
+              HapticFeedback.lightImpact();
             },
           ),
         ],
