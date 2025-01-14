@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "74661651777",
+    "project_id": "kitchen-compendium",
+    "storage_bucket": "kitchen-compendium.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74661651777:android:e602d146d27d5c45f16dc0",
+        "android_client_info": {
+          "package_name": "com.example.kitchen_compendium"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3HdsltDEha-8SMt3M4WZE-KBEOrp1XiI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -94,7 +94,7 @@ class RecipeDetailPage extends StatelessWidget {
                             const Text('• ', style: TextStyle(fontSize: 16)),
                             Expanded(
                               child: Text(
-                                '${ingredient.name} - ${ingredient.quantity} ${ingredient.unit}',
+                                '${ingredient.name} - ${ingredient.amount} ${ingredient.unit}',
                                 style: Theme.of(context).textTheme.bodyMedium,
                               ),
                             ),
