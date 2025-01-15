@@ -17,4 +17,8 @@ class RecipeService {
     final doc = await _firestore.collection(collectionName).doc(id).get();
     return doc.exists ? Recipe.fromFirestore(doc) : null;
   }
+
+  Future<void> addRecipe(Recipe recipe) async {
+    await _firestore.collection('recipes').add(recipe.toFirestore());
+  }
 }
