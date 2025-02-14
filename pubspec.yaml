@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   firebase_core: ^3.10.0
   cloud_firestore: ^5.6.1
+  flutter_launcher_icons: ^0.14.2
 
 dev_dependencies:
   flutter_test:
@@ -56,6 +57,13 @@ flutter_native_splash:
   web: false
   color: '#000000'
   image: assets/splash.png
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/splash.png"
+  adaptive_icon_background: "#000000" # Background color for Android adaptive icons
+  adaptive_icon_foreground: "assets/splash.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
